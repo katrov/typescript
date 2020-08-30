@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "lib": ["esnext"],
+    "target": "ES6",
+    "lib": ["DOM", "DOM.Iterable", "esnext"],
     "module": "esnext",
     "allowJs": true,
     "sourceMap": false,
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
+    "strictBindCallApply": false,
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]

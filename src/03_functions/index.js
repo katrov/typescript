@@ -90,7 +90,10 @@ console.log("card: " + pickedCard1.card + " of " + pickedCard1.suit);
 let pickedCard2 = pickCard(15);
 console.log("card: " + pickedCard2.card + " of " + pickedCard2.suit);
 // перегрузка функций — это набор одноименных функций с разным набором параметров.
-// перепишем функцию pickCard в ts
+// перепишем функцию pickCard
+// pickCard может быть определена в нескольких видах
+// с разным набором входных параметров и типов
+// Для перегрузки, вначале опеределяем все версии функции, которые не будут иметь никакой логики. А потом определяем версию функции с общей сигнатурой, которая подходит под все ранее определенные варианты. И в этой общей версии уже определяем конкретную логику функции.
 // function pickCard(x: { suit: string; card: number; }[]): number;
 // function pickCard(x: number): { suit: string; card: number; };
 // function pickCard(x: any): any {
